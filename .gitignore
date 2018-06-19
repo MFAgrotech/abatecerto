@@ -30,3 +30,100 @@
 *.exe
 *.out
 *.app
+// stringstreams
+
+#include <iostream>
+
+#include <string>
+
+#include <sstream>
+
+using namespace std;
+
+ 
+
+int main()
+
+{
+
+float PV=0;
+
+float QT=0;
+
+float PQ=0;
+
+float PO=0;
+
+float R=0;
+
+printf("------------------------------------------------");
+
+printf("           CONTROLE PARA ABATE              ");
+
+printf("------------------------------------------------");
+
+    
+
+     cout << "   •Peso médio dos animais: ";
+
+     cin>>PV;
+
+     cout << "•Quant. animais: ";
+
+     cin>>QT;
+
+     cout << "•Peso médio carcaça quente: ";
+
+     cin>>PQ;
+
+     cout << "•Peso médio dos ossos: ";
+
+     cin>>PO;
+
+     cout << "•Valor da @: ";
+
+     cin>>R;
+
+
+
+printf ("                                                         ");
+
+printf("---------------Estatística de abate--------------");  
+
+
+
+cout << "            Rendimento de Carcaça Quente: " << (PQ*100) / PV << "%" <<endl;
+
+
+
+cout << "Porcentagem de Ossos: " << (PO*100) / PV << "%" <<endl;
+
+
+
+cout << "Rendimento de Carne: " << 100 - ((PO*100) / PV) << "%" <<endl;
+
+
+
+cout << "kg de Carne: " << (PQ-PO) << " Kg" <<endl;
+
+
+
+cout << "Quantidade total de @: " << (PQ) / 15 << " @" <<endl;
+
+
+
+cout << "Quantidade média de @: " << ((PQ) / 15) / (QT)<< " @" <<endl;
+
+
+
+cout << "Valor a Receber: " << ((PQ) / 15) * R << " Reais" <<endl;
+
+cout << "                                              " <<endl;
+
+printf("---------------MFAgrotech-------------");
+
+
+
+return 0;
+
+}
